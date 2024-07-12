@@ -1,0 +1,301 @@
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="Homesignup&in.css">
+    <link rel="stylesheet" href="Home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script>
+        function signin() {
+            document.getElementById("overlay").style.display = "block";
+        }
+        function signup() {
+            document.getElementById("overlay").style.display = "none";
+            document.getElementById("overlay1").style.display = "block";
+        }
+        function signup1() {
+            document.getElementById("overlay").style.display = "block";
+            document.getElementById("overlay1").style.display = "none";
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navigation1">
+        <img src="Nav-1.png" class="mainimg" width="200px">
+        <div class="maindiv1">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50"
+                class="svg1">
+                <path
+                    d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z">
+                </path>
+            </svg>
+            <input type="text" placeholder="Search for your favorite groups in ATG" class="input1">
+        </div>
+        <button class="button2" onclick="signin()">create Account. <a class="a2">It's Free!</a></button>
+    </nav>
+
+    <div id="overlay">
+        <div class="signupbox">
+            <p class="para3">Let's learn, share & inspire each other with our passion for computer engineering. Sign up
+                now 🤘🏼</p>
+            <hr class="hr1">
+            <div class="flexc">
+                <div class="div1">
+                    <form>
+                        <h2>Create Account</h2>
+                        <input type="text" placeholder="First Name" class="inputclass1">
+                        <input type="text" placeholder="Last Name" class="inputclass1">
+                        <input type="email" placeholder="Email" class="inputclass">
+                        <br>
+                        <input type="password" placeholder="Password" class="inputclass">
+                        <br>
+                        <input type="password" placeholder="Confirm password" class="inputclass">
+                        <br>
+                        <input type="submit" value="Create Account" class="button1">
+                    </form>
+                    <div class="facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25"
+                            viewBox="0 0 48 48">
+                            <linearGradient id="Ld6sqrtcxMyckEl6xeDdMa_uLWV5A9vXIPu_gr1" x1="9.993" x2="40.615"
+                                y1="9.993" y2="40.615" gradientUnits="userSpaceOnUse">
+                                <stop offset="0" stop-color="#2aa4f4"></stop>
+                                <stop offset="1" stop-color="#007ad9"></stop>
+                            </linearGradient>
+                            <path fill="url(#Ld6sqrtcxMyckEl6xeDdMa_uLWV5A9vXIPu_gr1)"
+                                d="M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z"></path>
+                            <path fill="#fff"
+                                d="M26.707,29.301h5.176l0.813-5.258h-5.989v-2.874c0-2.184,0.714-4.121,2.757-4.121h3.283V12.46 c-0.577-0.078-1.797-0.248-4.102-0.248c-4.814,0-7.636,2.542-7.636,8.334v3.498H16.06v5.258h4.948v14.452 C21.988,43.9,22.981,44,24,44c0.921,0,1.82-0.084,2.707-0.204V29.301z">
+                            </path>
+                        </svg>
+                        Sign Up with Facebook
+                    </div>
+                    <div class="google">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25"
+                            viewBox="0 0 48 48">
+                            <path fill="#FFC107"
+                                d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z">
+                            </path>
+                            <path fill="#FF3D00"
+                                d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z">
+                            </path>
+                            <path fill="#4CAF50"
+                                d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z">
+                            </path>
+                            <path fill="#1976D2"
+                                d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z">
+                            </path>
+                        </svg>
+                        Sign Up with Google
+                    </div>
+                </div>
+                <div class="div2">
+                    <p class="para1">Already have an account? <a href="" class="a1" onClick="signup()">Sign In</a></p>
+                    <img src="signin.png" width="280" height="300" class="img1">
+                    <p class="para2">By signing up, you agree to our Terms & conditions, Privacy policy</p>
+                </div>
+            </div>
+            <button onclick="signup()" class="buttonother">Already have an account? signup</button>
+        </div>
+    </div>
+
+
+    <div id="overlay1">
+        <div class="signinbox">
+            <p class="para3">Let's learn, share & inspire each other with our passion for computer engineering. Sign up
+                now 🤘🏼</p>
+            <hr class="hr1">
+            <div class="flexc">
+                <div class="div1">
+                    <form>
+                        <h2>Sign In</h2>
+                        <input type="email" placeholder="Email" class="inputclass">
+                        <br>
+                        <input type="password" placeholder="Password" class="inputclass">
+                        <br>
+                        <input type="password" placeholder="Confirm password" class="inputclass">
+                        <br>
+                        <input type="submit" value="Sign In" class="button1">
+                    </form>
+                    <div class="facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25"
+                            viewBox="0 0 48 48">
+                            <linearGradient id="Ld6sqrtcxMyckEl6xeDdMa_uLWV5A9vXIPu_gr1" x1="9.993" x2="40.615"
+                                y1="9.993" y2="40.615" gradientUnits="userSpaceOnUse">
+                                <stop offset="0" stop-color="#2aa4f4"></stop>
+                                <stop offset="1" stop-color="#007ad9"></stop>
+                            </linearGradient>
+                            <path fill="url(#Ld6sqrtcxMyckEl6xeDdMa_uLWV5A9vXIPu_gr1)"
+                                d="M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z"></path>
+                            <path fill="#fff"
+                                d="M26.707,29.301h5.176l0.813-5.258h-5.989v-2.874c0-2.184,0.714-4.121,2.757-4.121h3.283V12.46 c-0.577-0.078-1.797-0.248-4.102-0.248c-4.814,0-7.636,2.542-7.636,8.334v3.498H16.06v5.258h4.948v14.452 C21.988,43.9,22.981,44,24,44c0.921,0,1.82-0.084,2.707-0.204V29.301z">
+                            </path>
+                        </svg>
+                        Sign Up with Facebook
+                    </div>
+                    <div class="google">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25"
+                            viewBox="0 0 48 48">
+                            <path fill="#FFC107"
+                                d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z">
+                            </path>
+                            <path fill="#FF3D00"
+                                d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z">
+                            </path>
+                            <path fill="#4CAF50"
+                                d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z">
+                            </path>
+                            <path fill="#1976D2"
+                                d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z">
+                            </path>
+                        </svg>
+                        Sign Up with Google
+                    </div>
+                    <p class="para4">Forget PassWord?</p>
+                </div>
+                <div class="div2">
+                    <p class="para1">Aleardy have an account? <a href="" class="a1" onClick="signup()">Sign In</a></p>
+                    <img src="signin.png" width="280" height="300" class="img1">
+                    <p class="para2">By signing up, you agree to our Terms & conditions, Privacy policy</p>
+                </div>
+            </div>
+            <button onclick="signup1()" class="buttonother">Already have an account? signup</button>
+        </div>
+    </div>
+    <br>
+
+    <div class="backgroundimage">
+        <h1 class="heading11">
+            <img src="arrow.png" class="arrowimage">
+            <img src="button.png" class="arrowimage1" width="80" height="100">
+         </h1>
+        <h1 class="heading12">Computer Engineering</h1>
+        <p class="para5">142,765 Computer Engineers follow this</p>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item list1">
+                        <a class="nav-link" href="#">All Posts (32)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Article</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Job</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="listbutton1">Write post</button>
+            <button class="listbutton2">Join Group</button>
+        </div>
+    </nav>
+    <br>
+    <br>
+
+    <div class="mainclass">
+    <div class="bodyclass">
+        <div class="card">
+            <img class="card-img-top" src="card1.jpg" alt="Card image cap" height="300">
+            <div class="card-body">
+                <h1>✍️ Article</h1>
+                <h4 class="card-text">What if famous brands had regular fonts? Meet RegulaBrands!</h4>
+                <p>I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+            </div>
+            <div class="smallbox">
+                <img src="box1.png" width="200" height="60">
+                <img src="eye.png" width="30" height="15" class="eyeimg">
+                <span>1.4k views</span>
+                <img src="share.png" width="20" height="20" class="shareimg">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="card">
+            <img class="card-img-top" src="card2.jpg" alt="Card image cap" height="300">
+            <div class="card-body">
+                <h1>🔬️ Education</h1>
+                <h4 class="card-text">Tax Benefits for Investment under National Pension Scheme launched by Government
+                </h4>
+                <p>I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+            </div>
+            <div class="smallbox">
+                <img src="box2.png" width="200" height="60">
+                <img src="eye.png" width="30" height="15" class="eyeimg">
+                <span>1.4k views</span>
+                <img src="share.png" width="20" height="20" class="shareimg">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="card">
+            <img class="card-img-top" src="card3.jpg" alt="Card image cap" height="300">
+            <div class="card-body">
+                <h1>🗓️ Meetup</h1>
+                <h4 class="card-text">Finance & Investment Elite Social Mixer @Lujiazui</h4>
+                <p>date: Fri, 12 Oct, 2018 location: Ahmedabad, India</p>
+                <button class="boxbutton">Visit Website</button>
+            </div>
+            <div class="smallbox">
+                <img src="box3.png" width="200" height="60">
+                <img src="eye.png" width="30" height="15" class="eyeimg">
+                <span>1.4k views</span>
+                <img src="share.png" width="20" height="20" class="shareimg">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="card">
+            <div class="card-body">
+                <h1>💼️ Job</h1>
+                <h4 class="card-text">Software Developer</h4>
+                <p>Company name: Innovaccer Analytics Private Ltd. &nbsp;&nbsp;&nbsp;&nbsp; location: Noida, India</p>
+                <button class="boxbutton" style="color:green;">Apply on Timejobs</button>
+            </div>
+            <div class="smallbox">
+                <img src="box4.png" width="200" height="60">
+                <img src="eye.png" width="30" height="15" class="eyeimg">
+                <span>1.4k views</span>
+                <img src="share.png" width="20" height="20" class="shareimg">
+            </div>
+        </div>
+    </div>
+    <div class="sidebox">
+        <input placeholder="Enter your location" class="locationinput">
+        <p class="locationpara">Your location will help us serve better and extend a personalised experience.</p>
+        <br>
+        <h6>RECOMMENDED GROUPS</h6>
+        <div class="smallbox1">
+            <img src="sideimg1.png" width="100">
+            <button class="followbutton">Follow</button>
+        </div>
+        <div class="smallbox1">
+            <img src="sideimg2.png" width="100">
+            <button class="followbutton">Follow</button>
+        </div>
+        <div class="smallbox1">
+            <img src="sideimg3.png" width="80" class="smallimage3">
+            <button class="followbutton1">Follow</button>
+        </div>
+        <div class="smallbox1">
+            <img src="sideimg4.png" width="100">
+            <button class="followbutton">Follow</button>
+        </div>
+        <p class="seemorepara">See More...</p>
+    </div>
+    </div>
+</body>
+
+</html>
